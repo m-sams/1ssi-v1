@@ -1,0 +1,23 @@
+/*===Fonts Import===*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;1,400&display=swap');
+
+/*===Basic HTML Ruling===*/
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* ================= Basic Responsive Images and Video ================= */
+  img,video{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+/*===Header Content===*/
+
+/*===Hero Banner Content===*/
+
+/*===Body & Home Content===*/
