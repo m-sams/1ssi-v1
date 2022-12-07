@@ -19,5 +19,8 @@ html {
 /*===Header Content===*/
 
 /*===Hero Banner Content===*/
+.hero-banner{
+    background-color:red;
+}
 
 /*===Body & Home Content===*/
