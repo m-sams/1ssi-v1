@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1SSI | Bringing 100 Suits & BMCC Together</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css"> 
 </head>
 
 <body>
     <!--Social; News Link; Search; Page Links-->
     <nav class="navbar">
-        <div class="campaign-title">LOGO</div>
+        <div class="campaign-title"><a href="index.html">1SSI</a></div>
         <a href="#" class="toggle-button">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -19,20 +20,22 @@
         </a>
         <div class="navbar-links">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">22' Gala: Ticket Purchase</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">1SSI</a></li>
-                <li><a href="#">Our Work</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Donate</a></li>
+                <li><a href="https://www.100suitsnyc.org/" target="_blank">Home</a></li>
+                <li><a href="https://www.100suitsnyc.org/22-gala-ticket-purchase" target="_blank">22' Gala: Ticket Purchase</a></li>
+                <li><a href="https://www.100suitsnyc.org/about" target="_blank">About</a></li>
+                <li><a href="https://m-sams.github.io/1ssi-v1/" target="_blank">1SSI</a></li>
+                <li><a href="https://www.100suitsnyc.org/our-work" target="_blank">Our Work</a></li>
+                <li><a href="https://www.100suitsnyc.org/contact-us" target="_blank">Contact Us</a></li>
+                <!--Attempt to make this a Donate Button-->
+                <li><a href="https://www.paypal.com/donate?token=nFqflc6GJUTQ-J44rXMYVOSXXwkkCQb_IfgCvQ5kAz5Jl3Wh-2uhxfOG7WYpqat8oNwG0dO5Exxhygz-" target="_blank">Donate</a></li> 
             </ul>
         </div>  
     </nav>
 
     <main class="home">
         <section class="hero-banner">
-            <img src="images/bannerPlaceholder.jpg" alt="" class="hero-banner">
+            <!--Replace and Resize this image, add mission text-->
+            <img src="images/bannerPlaceholder.png" alt="" class="hero-banner">
         </section>
 
         <hr class="solid">
@@ -44,33 +47,45 @@
 
         <section class="volunteer">
             <h3 class="section-title">Volunteer for Upcoming Events</h3>
-            <p class="section-info">Are you a BMCC student interested in volunteering at an upcoming event? Please stay updated on the <a href="https://www.100suitsnyc.org/our-work" target="_blank">“Our Work” section</a>, follow 100 Suits on Instagram, or visit an office location and sign up. </p>
+            <p class="section-info">Are you a BMCC student interested in volunteering at an upcoming event? Please stay updated on the <a href="https://www.100suitsnyc.org/our-work" target="_blank">“Our Work” section</a>, follow <a href="https://instagram.com/100suits?igshid=NDk5N2NZjQ=" target="_blank">100 Suits on Instagram,</a> or visit an <a href="#office-locations">office location</a> and sign up. </p>
         </section>
 
         <section class="paid-exp">
             <h3 class="section-title">Paid Experiences</h3>
-            <p class="section-info">Are you a BMCC student looking for interesting and socially-minded work? Apply for one of the positions below through 1SSI. Please email us your resume and tell us why you’re interested.</p>
+            <p class="section-info">Are you a BMCC student looking for interesting and socially-minded work? Apply for one of the positions below through 1SSI. Please <a href="mailto: #">email us</a> your resume and tell us why you’re interested.</p>
             <ul id="paid-exp-bullet">
-                <li>Events Coordination Team: Help decide where it would be useful to organize 100 Suits promotion events, what partnerships with other businesses would be largely beneficial to the advancement of the organization, and participate in planned events to increase community outreach with the 100 Suits organization. This ranges from standing and speaking at 100 Suits panels and booths at select venues to handing out flyers and more.</li>
-                <li>Respond to or prevent violent occurences including but not limited to arguments, fights, or shootings. You will be subject to special training to be eligible for this work under 100 Suits.</li>
-                <li>Pick up, quality inspect, or sort clothing donations sent to 100 Suits offices.</li>
-                <li>Answer phone calls and provide information about the organization and what qualifies for donations.</li>
-                <li>Clean and organize 100 Suits office locations.</li>
+                <li><p class="position">Events Coordination Team</p> Help decide where it would be useful to organize 100 Suits promotion events, what partnerships with other businesses would be largely beneficial to the advancement of the organization, and participate in planned events to increase community outreach with the 100 Suits organization. This ranges from standing and speaking at 100 Suits panels and booths at select venues to handing out flyers and more.</li>
+                <li><p class="position">Crisis Management (CMS)</p>Respond to or prevent violent occurences including but not limited to arguments, fights, or shootings. You will be subject to special training to be eligible for this work under 100 Suits.</li>
+                <li><p class="position">Donations Management</p>Pick up, quality inspect, or sort clothing donations sent to 100 Suits offices.</li>
+                <li><p class="position">Office Aide</p>Answer phone calls and provide information about the organization and what qualifies for donations.</li>
+                <li><p class="position">Maintenance Team</p>Clean and organize 100 Suits office locations.</li>
             </ul>
         </section>
 
         <section class="merch" id="merch">
             <h3 class="section-title">Merchandise</h3>
-            <p class="section-info">All participants and employees will receive a clothespin and keychain!!</p>
+            <p class="section-info">All participants and employees will receive a clothespin and keychain.</p>
             <div id="merch-media">
-                <img src="" alt="Keychain">
-                <img src="" alt="Clothespin">
+                <!--Resize this image-->
+                <img src="images/dgtl_fab.jpg" alt="Keychain">
+                <img src="images/dgtl_key.png">
+                <img src="images/dgtl_pin.png">
             </div>
         </section>
 
-        <section class="office-locations">
+        <section class="office-locations" id="office-locations">
             <h3 class="section-title">Office Locations</h3>
             <p class="section-info">Here are 100 Suits' office locations:</p>
+            <div class="office-maps">
+                <div class="brooklyn">
+                    <h5>Downtown Brooklyn: 80 Vandam St, New York, NY 10013</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.61496316296!2d-74.01016408490148!3d40.726491944666364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259f2dfe51cbf%3A0xd2bdbbf16a2d718c!2s80%20Vandam%20St%2C%20New%20York%2C%20NY%2010013!5e0!3m2!1sen!2sus!4v1670948976953!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="Jamaica">
+                    <h5>Jamaica, Queens: 12A, 227, Merrick Blvd, Laurelton, NY 11413</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.8765128382674!2d-73.74485938490302!3d40.67668974771242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c264015a8ac84d%3A0x3d5e0034bd9c6f75!2s100%20Suits!5e0!3m2!1sen!2sus!4v1670948844195!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
         </section>
     </main>
     
@@ -78,11 +93,13 @@
     <footer class="social-apt-only">
         <div class="icons">
             <ul class="social-links">
-                <li></li>
-                <li></li>
+                <li><a href="https://www.facebook.com/100SUITS" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                <li><a href="https://instagram.com/100suits?igshid=NDk5N2NZjQ=" target="_blank"><i class='bx bxl-instagram'></i></a></li>
             </ul>
         </div>
-        <h3 class="office-notice">Office Hours are by Appointment Only</h3>
+        <div class="notice">
+            <h3 class="office-notice">Office Hours are by Appointment Only</h3>
+        </div>
     </footer>
     <script src="js/app.js"></script>
 </body>
