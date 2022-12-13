@@ -12,23 +12,31 @@ html {
   /* ================= Basic Responsive Images and Video ================= */
   img,video{
     width: auto;
-    height: auto;
+    height: 800px;
     max-width: 100%;
 }
-
-/*===Header Content===*/
-
-/*===Hero Banner Content===*/
+.hero-banner img{
+  padding: 35px;
+}
+hr.solid {
+  border-top: 2px solid black;
+}
 
 /*===Body & Home Content===*/
 body{
   margin: 0;
   padding: 0;
 }
+body,html{
+  height:100%;
+}
 .navbar{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.navbar a{
+  color:black;
 }
 .navbar-links ul{
   margin: 0;
@@ -67,6 +75,33 @@ body{
   width: 100%;
   background-color:black;
   border-radius: 10px;
+}
+
+.about, .volunteer, .paid-exp, .merch, .office-locations{
+  padding: 15px;
+}
+.section-title{
+  font-family: Montserrat;
+}
+.section-info{
+  line-height: 2rem;
+  font-family: Montserrat;
+}
+li{
+  font-family:Montserrat;
+  line-height: 2rem;
+  list-style: square;
+}
+a{
+  text-decoration: none;
+  color: #d70022;
+}
+a:hover{
+  text-decoration:underline;
+}
+h3{
+  font-family: montserrat;
+  font-weight: 600;
 }
 
 @media (max-width: 800px){
