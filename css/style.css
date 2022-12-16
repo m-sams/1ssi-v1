@@ -23,7 +23,7 @@ html {
   /*border: 2px solid #d70022;*/
 }
 hr.solid {
-  border-top: 2px solid #d70022;
+  border-top: 2px solid #8b0000;
 }
 
 /*===Body & Home Content===*/
@@ -39,7 +39,7 @@ body,html{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:#d70022;
+  background-color:#8b0000;
 }
 .navbar a{
   color: white;
@@ -53,7 +53,9 @@ body,html{
 .navbar-links li{
   list-style:none;
 }
-
+.navbar-links li:hover{
+  list-style:none;
+}
 .navbar-links li a{
   text-decoration: none;
   padding-right: 6.5rem;
@@ -76,7 +78,7 @@ body,html{
 #strip-1 input[type=text]{
   padding: 6px;
   border: none;
-  color:#d70022;
+  color:#8b0000;
 }
 .toggle-button{
   position: absolute;
@@ -113,7 +115,7 @@ li{
 }
 a{
   text-decoration: none;
-  color: #d70022;
+  color: #8b0000;
 }
 li a{
   font-weight: 600;
@@ -128,16 +130,38 @@ h3{
 .position{
   font-weight: 600;
 }
-#merch-media img{
-  height: 400px;
-  width: 400px;
+#merch-media .card-container{
+    display:grid;
+    grid-template-columns: repeat( 2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+    padding-top:15px;
+    margin:5px;
+}
+.card-title{
+  color: #8b0000;
+}
+.card-info{
+  padding: 10px;
+  margin-left: 25px;
+}
+.card>.card-info,.card>figure{
+  max-width: 100%;
+  max-height: 80%;
+}
+
+.about-card{
+  font-family: Montserrat;
+  line-height: 1.5rem;
 }
 .office-maps{
   display:flex;
   padding:20px;
+  margin: 15px;
 }
-.office-maps h5{
+.office-maps h4{
   font-family: Montserrat;
+  color: #8b0000;
 }
 .brooklyn, .jamaica{
   padding-right:100px;
@@ -160,14 +184,14 @@ h3{
   display:flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #d70022;
+  background-color: #8b0000;
 }
 .notice h3{
   padding-right: 40px;
   color:white;
 }
 
-@media (max-width: 1100px){
+@media (max-width: 1200px){
   .toggle-button{
     display:flex;
   }
@@ -182,6 +206,9 @@ h3{
   .navbar-links li{
     text-align: center;
   }
+  .navbar-links li:hover{
+    background-color: #990000;
+  }
   .navbar-links li a{
     padding: .5rem 1rem;
   }
@@ -195,11 +222,17 @@ h3{
   .office-maps{
     display:block;
   }
-  .merch{
+  #merch-media .card-container{
     display:block;
+    padding-top:15px;
+    padding-bottom:15px;
+    margin:20px;
   }
-  .merch-media img{
-    width: auto;
-    height: auto;
+  .card-container{
+    padding: 10px;
+  }
+
+  .card>.card-info,.card>figure{
+    max-width: 100%;
   }
 }
