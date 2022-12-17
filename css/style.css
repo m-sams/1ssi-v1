@@ -138,6 +138,10 @@ h3{
     padding-top:15px;
     margin:5px;
 }
+#merch-media .card-container figure>img{
+  width: 500px;
+  height: 500px;
+}
 .card-title{
   color: #8b0000;
 }
